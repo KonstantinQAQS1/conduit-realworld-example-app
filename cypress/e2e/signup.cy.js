@@ -15,7 +15,7 @@ describe('Sign up', () => {
 
     it('should do register user', () => {
 
-        cy.get('@appHeader1').find('a[href$="/register"]').click();
+        cy.get('@appHeader').find('a[href$="/register"]').click();
         cy.url().should('include', '/#/register');
 
         cy.get('.auth-page').as('registerPage');
