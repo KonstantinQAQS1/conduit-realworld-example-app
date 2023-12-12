@@ -8,6 +8,7 @@ function FormFieldset({
   placeholder,
   required,
   type,
+  'data-cy': dataCy,
   value,
 }) {
   return (
@@ -17,6 +18,7 @@ function FormFieldset({
         className={`form-control ${normal ? "" : "form-control-lg"}`}
         minLength={minLength}
         name={name}
+        data-cy={dataCy}
         onChange={handler}
         placeholder={placeholder}
         required={required}

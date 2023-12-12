@@ -28,6 +28,7 @@ function LoginForm({ onError }) {
   return (
     <form onSubmit={handleSubmit}>
       <FormFieldset
+        data-cy="login-email"
         type="email"
         name="email"
         required
@@ -40,6 +41,7 @@ function LoginForm({ onError }) {
       <FormFieldset
         name="password"
         type="password"
+        data-cy="login-password"
         required
         placeholder="Password"
         value={password}
