@@ -48,7 +48,7 @@ function LoginForm({ onError }) {
         handler={inputHandler}
         minLength="5"
       ></FormFieldset>
-      <button className="btn btn-lg btn-primary pull-xs-right">Login</button>
+      <button className="btn btn-lg btn-primary pull-xs-right" data-cy="submit">Login</button>
     </form>
   );
 }

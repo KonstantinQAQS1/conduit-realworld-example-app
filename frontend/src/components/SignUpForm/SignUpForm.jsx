@@ -35,6 +35,7 @@ function SignUpForm({ onError }) {
         name="username"
         required
         placeholder="Your Name"
+        data-cy={"username"}
         value={username}
         handler={inputHandler}
       ></FormFieldset>
@@ -42,6 +43,7 @@ function SignUpForm({ onError }) {
       <FormFieldset
         name="email"
         type="email"
+        data-cy={"signup-email"}
         required
         placeholder="Email"
         value={email}
@@ -51,12 +53,13 @@ function SignUpForm({ onError }) {
       <FormFieldset
         name="password"
         type="password"
+        data-cy={"signup-password"}
         required
         placeholder="Password"
         value={password}
         handler={inputHandler}
       ></FormFieldset>
-      <button className="btn btn-lg btn-primary pull-xs-right">Sign up</button>
+      <button className="btn btn-lg btn-primary pull-xs-right" data-cy="submit">Sign up</button>
     </form>
   );
 }
