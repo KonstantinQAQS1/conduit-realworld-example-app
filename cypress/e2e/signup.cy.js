@@ -35,10 +35,10 @@
 describe('Sign up', () => {
 
     before(() => {
-        // cy.exec('npx -w backend sequelize-cli db:seed:undo:all')
-        //     .its('code').should('eq', 0);
-        // cy.exec('npx -w backend sequelize-cli db:seed:all')
-        //     .its('code').should('eq', 0);
+        cy.exec('npx -w backend sequelize-cli db:seed:undo:all')
+            .its('code').should('eq', 0);
+        cy.exec('npx -w backend sequelize-cli db:seed:all')
+            .its('code').should('eq', 0);
     });
 
     beforeEach(() => {
